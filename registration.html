@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        form {
+            max-width: 450px;
+            max-height: 750px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="phone"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-style: italic;">Learn with Hunar</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2 style="color: aliceblue;">Registration:</h2>
+    <p>Fill out the form below to register for a course:</p>
+    <form action="registration_process.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Mobile number:</label>
+        <input type="phone" id="phone" name="phone" required>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="course1">----</option>
+            <option value="course1">PYTHON BASICS</option>
+            <option value="course2">JAVA BASICS</option>
+            <option value="course3">WEB DEVELOPMENT</option>
+            <option value="course2">CYBER SECURITY</option>
+            <option value="course2">MACHINE LEARNING</option>
+            <option value="course2">DATA SCIENCE</option>
+            <option value="course2">APP DEVELOPMENT</option>
+            <option value="course2">UI/UX DESIGNING</option>
+        </select>
+
+        <input type="submit" value="Register">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2024 Learn with Hunar</p>
+</footer>
+
+</body>
+</html>
